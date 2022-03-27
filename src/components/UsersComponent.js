@@ -14,9 +14,10 @@ const UsersComponent = ({items}) => {
               <th>Name</th>
               <th>Username</th>
               <th>Email</th>
-              {/* <th>Address</th> */}
+              <th>Address</th>
               <th>Phone</th>
               <th>Website</th>
+              <th>Company</th>
 
             </tr>
           </thead>
@@ -29,9 +30,10 @@ const UsersComponent = ({items}) => {
                   <td>{item.name}</td>
                   <td>{item.username}</td>
                   <td>{item.email}</td>
-                  {/* <td>{item.address}</td> */}
+                  <td>{JSON.stringify(item.address)}</td>
                   <td>{item.phone}</td>
                   <td>{item.website}</td>
+                  <td>{JSON.stringify(item.company)}</td>
                 </tr>
               );
             })}

@@ -10,7 +10,7 @@ const PostsComponent = ({items}) => {
           <Table striped bordered hover>
           <thead>
             <tr>
-              <th>User-Id</th>
+              <th>UserId</th>
               <th>Id</th>
               <th>Title</th>
               <th>Body</th>
