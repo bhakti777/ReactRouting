@@ -14,23 +14,6 @@ const TestUseEffect = () => {
       .then((json) => setItems(json));
   }, [resourceType]);
 
-// if(resourceType="posts"){
-//   return(
-//     <PostsComponent items={items}/>
-//   )
-// }
-
-// if(resourceType="users"){
-//   return(
-//     <UsersComponent items={items}/>
-//   )
-// }
-
-// if(resourceType="comments"){
-//   return(
-//     <UsersComponent items={items}/>
-//   )
-// }
 
   return (
     <>
@@ -46,11 +29,11 @@ const TestUseEffect = () => {
 
 
       <div>
-      {resourceType=="users" &&<UsersComponent items={items}/>}
+      {resourceType=="users" && <UsersComponent items={items}/>}
       </div>
 
       <div>
-        {resourceType=="comments" &&<CommentsComponent items={items}/>}
+        {resourceType=="comments" && <CommentsComponent items={items}/>}
       </div>
     </>
   );
