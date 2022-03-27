@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
-import Table from "react-bootstrap/Table";
+import CommentsComponent from "../components/CommentsComponent";
+import PostsComponent from "../components/PostsComponent";
+import UsersComponent from "../components/UsersComponent";
 
 const TestUseEffect = () => {
   const [resourceType, setResourceType] = useState("posts");
@@ -20,89 +22,17 @@ const TestUseEffect = () => {
         <Button onClick={() => setResourceType("comments")}>Comments</Button>
       </div>
 
-      {/* <h1>{resourceType}</h1> */}
       <div>
-        <Table striped bordered hover>
-          <thead>
-            <tr>
-              <th>User-Id</th>
-              <th>Id</th>
-              <th>Title</th>
-              <th>Body</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            {items.map((item,index) => {
-              return (
-                <tr>
-                  <td>{JSON.stringify(item.userId)}</td>
-                  <td>{JSON.stringify(item.userId)}</td>
-                  <td>{JSON.stringify(item.title)}</td>
-                  <td>{JSON.stringify(item.body)}</td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </Table>
+       <PostsComponent items={items}/>
       </div>
 
 
-
       <div>
-        <Table striped bordered hover>
-          <thead>
-            <tr>
-              <th>Id</th>
-              <th>Name</th>
-              <th>Username</th>
-              <th>Email</th>
-              <th>Address</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            {items.map((item) => {
-              return (
-                <tr>
-                  <td>{JSON.stringify(item.id)}</td>
-                  <td>{JSON.stringify(item.name)}</td>
-                  <td>{JSON.stringify(item.username)}</td>
-                  <td>{JSON.stringify(item.email)}</td>
-                  <td>{JSON.stringify(item.address)}</td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </Table>
+        <UsersComponent items={items}/>
       </div>
 
       <div>
-        <Table striped bordered hover>
-          <thead>
-            <tr>
-              <th>Post-Id</th>
-              <th>Id</th>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Body</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            {items.map((item) => {
-              return (
-                <tr>
-                  <td>{JSON.stringify(item.postId)}</td>
-                  <td>{JSON.stringify(item.id)}</td>
-                  <td>{JSON.stringify(item.name)}</td>
-                  <td>{JSON.stringify(item.email)}</td>
-                  <td>{JSON.stringify(item.body)}</td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </Table>
+        <CommentsComponent items={items}/>
       </div>
     </>
   );
