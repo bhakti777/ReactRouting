@@ -6,9 +6,11 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
-import Blogs from "./pages/Blogs";
+import AddTodo from './pages/AddTodo';
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
+import TestPage from "./pages/TestPage";
+import TestUseEffect from "./pages/TestUseEffect";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -16,8 +18,10 @@ ReactDOM.render(
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path='blogs' element={<Blogs />} />
+          <Route path='addtodo' element={<AddTodo/>} />
           <Route path='contact' element={<Contact />} />
+          <Route path='testpage' element={<TestPage />} />
+          <Route path='testuseeffect' element={<TestUseEffect />} />
           <Route path='*' element={<NoPage />} />
         </Route>
       </Routes>
