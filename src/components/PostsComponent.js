@@ -21,10 +21,10 @@ const PostsComponent = ({items}) => {
             {items.map((item) => {
               return (
                 <tr>
-                  <td>{JSON.stringify(item.userId)}</td>
-                  <td>{JSON.stringify(item.userId)}</td>
-                  <td>{JSON.stringify(item.title)}</td>
-                  <td>{JSON.stringify(item.body)}</td>
+                  <td>{item.userId}</td>
+                  <td>{item.userId}</td>
+                  <td>{item.title}</td>
+                  <td>{item.body}</td>
                 </tr>
               );
             })}

@@ -14,7 +14,10 @@ const UsersComponent = ({items}) => {
               <th>Name</th>
               <th>Username</th>
               <th>Email</th>
-              <th>Address</th>
+              {/* <th>Address</th> */}
+              <th>Phone</th>
+              <th>Website</th>
+
             </tr>
           </thead>
 
@@ -22,11 +25,13 @@ const UsersComponent = ({items}) => {
             {items.map((item) => {
               return (
                 <tr>
-                  <td>{JSON.stringify(item.id)}</td>
-                  <td>{JSON.stringify(item.name)}</td>
-                  <td>{JSON.stringify(item.username)}</td>
-                  <td>{JSON.stringify(item.email)}</td>
-                  <td>{JSON.stringify(item.address)}</td>
+                  <td>{item.id}</td>
+                  <td>{item.name}</td>
+                  <td>{item.username}</td>
+                  <td>{item.email}</td>
+                  {/* <td>{item.address}</td> */}
+                  <td>{item.phone}</td>
+                  <td>{item.website}</td>
                 </tr>
               );
             })}
