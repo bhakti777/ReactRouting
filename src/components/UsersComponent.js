@@ -4,8 +4,11 @@ import Table from "react-bootstrap/Table";
 
 const UsersComponent = ({items}) => {
 
-  
+    console.log("address",items)
+
     return (
+
+        
         <>
          <Table striped bordered hover>
           <thead>
@@ -30,7 +33,7 @@ const UsersComponent = ({items}) => {
                   <td>{item.name}</td>
                   <td>{item.username}</td>
                   <td>{item.email}</td>
-                  <td>{JSON.stringify(item.address)}</td>
+                  <td>{item.address?.street}</td>
                   <td>{item.phone}</td>
                   <td>{item.website}</td>
                   <td>{JSON.stringify(item.company)}</td>

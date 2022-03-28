@@ -31,6 +31,8 @@ const Layout = () => {
           <Nav.Link href="#action3"><Link to="/contact">Contact</Link></Nav.Link>
           <Nav.Link href="#action4"><Link to="/testpage">TestPage</Link></Nav.Link>
           <Nav.Link href="#action4"><Link to="/testuseeffect">TestUseEffect</Link></Nav.Link>
+          <Nav.Link href="#action4"><Link to="/imagegallerypage">ImageGallerypPage</Link></Nav.Link>
+          <Nav.Link href="#action4"><Link to="/shoppingcartpage">Shopping Cart</Link></Nav.Link>
 
           <NavDropdown title="Dropdown" id="offcanvasNavbarDropdown">
             <NavDropdown.Item href="#action3">Action</NavDropdown.Item>

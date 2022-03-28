@@ -11,6 +11,8 @@ import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
 import TestPage from "./pages/TestPage";
 import TestUseEffect from "./pages/TestUseEffect";
+import ImageGalleryPage from './pages/ImageGalleryPage';
+import ShoppingCartPage from './pages/ShoppingCartPage';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -22,6 +24,9 @@ ReactDOM.render(
           <Route path='contact' element={<Contact />} />
           <Route path='testpage' element={<TestPage />} />
           <Route path='testuseeffect' element={<TestUseEffect />} />
+          <Route path='imagegallerypage' element={<ImageGalleryPage />} />
+          <Route path='shoppingcartpage' element={<ShoppingCartPage />} />
+
           <Route path='*' element={<NoPage />} />
         </Route>
       </Routes>

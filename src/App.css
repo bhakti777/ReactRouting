@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.Gallery{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;   /* Each of our four columns will be 25% width.*/
+  grid-gap: 15px;   
+ 
+  padding: 20px;      /* small spacing within our container */
+  margin-top: 100px;   
+}
